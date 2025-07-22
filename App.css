@@ -1,0 +1,22 @@
+/* src/App.css */
+:root {
+  --verde1: #c9f0e4; /* verde pastel muy claro */
+  --verde2: #a4e4c1; /* verde pastel medio */
+  --verde3: #7fd6a1; /* verde pastel un poco más fuerte */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  /* Degradado de tres tonos en ángulo */
+  background: linear-gradient(135deg, var(--verde1) 0%, var(--verde2) 50%, var(--verde3) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
