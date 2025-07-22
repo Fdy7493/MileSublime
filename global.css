@@ -1,0 +1,108 @@
+/* === Estilos globales para texto === */
+:root {
+  --verde1: #c9f0e4; /* verde pastel muy claro */
+  --verde2: #a4e4c1; /* verde pastel medio */
+  --verde3: #7fd6a1; /* verde pastel un poco más fuerte */
+}
+body {
+  color: #000000; /* Texto negro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Opcional: Fuente moderna */
+}
+
+/* === Botones verdes personalizados === */
+.btn-custom-green {
+  background-color: #28a745; /* Verde base */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.btn-custom-green:hover {
+  background-color: #218838; /* Verde oscuro al pasar el mouse */
+  color: white;
+}
+
+/* === Opcional: Personalizar cards y contenedores === */
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Ajustes para textos secundarios (gris oscuro) === */
+.text-secondary-custom {
+  color: #333333 !important; /* Gris oscuro legible */
+}
+.link-container a {
+  display: block; /* Fuerza el salto de línea */
+  margin-bottom: 8px; /* Espaciado entre enlaces */
+}
+.logo-hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.3));
+}
+
+.logo-hover:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(0, 123, 255, 0.7));
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-image.enlarged {
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .carousel { height: 200px; }
+}
+:root {
+  --facebook: #1877F2;
+  --tiktok: #000000;
+  --whatsapp: #25D366;
+  --instagram: #E1306C;
+  --youtube: #FF0000;
+}
+
+.facebook-icon { color: var(--facebook) !important; }
+.tiktok-icon { color: var(--tiktok) !important; }
+.facebook-icon { color: var(--whatsapp) !important; }
+.tiktok-icon { color: var(--youtube) !important; }
+/* ... (repite para los demás) ... */
+

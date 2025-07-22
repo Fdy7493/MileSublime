@@ -1,0 +1,31 @@
+.image-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.dashboard-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-image.enlarged {
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.caption {
+  margin-top: 8px;
+  font-weight: 500;
+  color: #333;
+}

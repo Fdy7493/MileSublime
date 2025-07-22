@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-image.enlarged {
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}

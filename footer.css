@@ -1,0 +1,40 @@
+/* Efecto Vite (brillo + escala + sombra dinámica) */
+.hover-effect {
+  transition: all 0.3s ease;
+  display: inline-block; /* Necesario para transform */
+}
+
+/* Facebook - Azul */
+.hover-effect.facebook:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #1877F2);
+}
+
+/* TikTok - Negro con brillo turquesa (para contraste) */
+.hover-effect.tiktok:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #00f2ea);
+}
+
+/* WhatsApp - Verde */
+.hover-effect.whatsapp:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #25D366);
+}
+
+/* Instagram - Rosa/Rojo */
+.hover-effect.instagram:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #E1306C);
+}
+
+/* YouTube - Rojo */
+.hover-effect.youtube:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px #FF0000);
+}
+@media (max-width: 576px) {
+  .hover-effect {
+    font-size: 20px !important;
+  }
+}
